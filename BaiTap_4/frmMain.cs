@@ -42,5 +42,10 @@ namespace BaiTap_4
             File.WriteAllText(fileNameOpened, rtbNoiDung.Text);
             MessageBox.Show("Lưu thành công!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void rtbNoiDung_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

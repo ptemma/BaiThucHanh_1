@@ -28,63 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtPath = new System.Windows.Forms.TextBox();
-            this.btnDoc = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.rtbNoiDung = new System.Windows.Forms.RichTextBox();
-            this.SuspendLayout();
+            txtPath = new TextBox();
+            btnDoc = new Button();
+            btnLuu = new Button();
+            rtbNoiDung = new RichTextBox();
+            SuspendLayout();
             // 
             // txtPath
             // 
-            this.txtPath.Location = new System.Drawing.Point(10, 9);
-            this.txtPath.Name = "txtPath";
-            this.txtPath.Size = new System.Drawing.Size(444, 27);
-            this.txtPath.TabIndex = 0;
+            txtPath.Location = new Point(10, 9);
+            txtPath.Name = "txtPath";
+            txtPath.Size = new Size(444, 27);
+            txtPath.TabIndex = 0;
             // 
             // btnDoc
             // 
-            this.btnDoc.Location = new System.Drawing.Point(470, 9);
-            this.btnDoc.Name = "btnDoc";
-            this.btnDoc.Size = new System.Drawing.Size(143, 27);
-            this.btnDoc.TabIndex = 1;
-            this.btnDoc.Text = "Chọn tập tin đọc";
-            this.btnDoc.UseVisualStyleBackColor = true;
-            this.btnDoc.Click += new System.EventHandler(this.btnDoc_Click);
+            btnDoc.Location = new Point(470, 9);
+            btnDoc.Name = "btnDoc";
+            btnDoc.Size = new Size(143, 27);
+            btnDoc.TabIndex = 1;
+            btnDoc.Text = "Chọn tập tin đọc";
+            btnDoc.UseVisualStyleBackColor = true;
+            btnDoc.Click += btnDoc_Click;
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(619, 9);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(143, 27);
-            this.btnLuu.TabIndex = 2;
-            this.btnLuu.Text = "Lưu sửa đổi";
-            this.btnLuu.UseVisualStyleBackColor = true;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            btnLuu.Location = new Point(619, 9);
+            btnLuu.Name = "btnLuu";
+            btnLuu.Size = new Size(143, 27);
+            btnLuu.TabIndex = 2;
+            btnLuu.Text = "Lưu sửa đổi";
+            btnLuu.UseVisualStyleBackColor = true;
+            btnLuu.Click += btnLuu_Click;
             // 
             // rtbNoiDung
             // 
-            this.rtbNoiDung.Location = new System.Drawing.Point(13, 47);
-            this.rtbNoiDung.Name = "rtbNoiDung";
-            this.rtbNoiDung.Size = new System.Drawing.Size(750, 389);
-            this.rtbNoiDung.TabIndex = 3;
-            this.rtbNoiDung.Text = "";
+            rtbNoiDung.Location = new Point(13, 47);
+            rtbNoiDung.Name = "rtbNoiDung";
+            rtbNoiDung.Size = new Size(750, 389);
+            rtbNoiDung.TabIndex = 3;
+            rtbNoiDung.Text = "";
+            rtbNoiDung.TextChanged += rtbNoiDung_TextChanged;
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(777, 450);
-            this.Controls.Add(this.rtbNoiDung);
-            this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.btnDoc);
-            this.Controls.Add(this.txtPath);
-            this.Name = "frmMain";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmMain";
-            this.Load += new System.EventHandler(this.frmMain_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(777, 450);
+            Controls.Add(rtbNoiDung);
+            Controls.Add(btnLuu);
+            Controls.Add(btnDoc);
+            Controls.Add(txtPath);
+            Name = "frmMain";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "frmMain";
+            Load += frmMain_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -11,7 +11,7 @@ namespace BaiTap_1
         public static void Bt_a()
         {
             DateTime date = DateTime.Parse(Console.ReadLine()); ;
-
+            //DateTime date = new DateTime(2024, 4, 20, 10, 30, 0); ;
             string strThu = "";
             switch (date.DayOfWeek)
             {
@@ -189,9 +189,9 @@ namespace BaiTap_1
         }
         static void Main(string[] args)
         {
-            Bt_a();
+            //Bt_a();
             //Bt_b();
-            //Bt_c();
+            Bt_c();
         }
     }
 }
